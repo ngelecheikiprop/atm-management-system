@@ -1,5 +1,10 @@
 """milk deposits storage format
 """
+from sqlalchemy import Column, String, Integer, DateTime, create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from datetime import datetime
+
+from models import Base
 class Deposit(Base):
     """Class to define milk desposits table
     """
