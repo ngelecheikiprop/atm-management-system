@@ -5,13 +5,7 @@ from models.payments import Payment
 from datetime import datetime
 @app_views.route("/callback", methods=['POST'], strict_slashes=False)
 def callback():
-    """get data and store
-    """
-    """
-    get the data in varibales
-    make payment object
-    new 
-    save
+    """get payment data and store it in database
     """
     print("recieving data")
     data = request.get_json()
