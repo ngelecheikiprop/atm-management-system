@@ -14,3 +14,4 @@ def callback():
     print("recieving data")
     data = request.get_json()
     print(data)
+    return "ok"
