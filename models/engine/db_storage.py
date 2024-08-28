@@ -1,4 +1,12 @@
-Class DBStorage():
+from os import getenv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
+import sqlalchemy
+
+from models.deposit import Deposit
+from models.payments import Payment
+from models import Base
+class DBStorage():
     """Interacts with mysql database
     """
     __engine = None
@@ -37,4 +45,9 @@ Class DBStorage():
         """
         self.__session.remove()
 
-
+    def reload(self):
+        """reloads data from the database"""
+        Base.metadata.create_all(self.__engine)
+        sess_factory = sessionmaker(bind=self.__engine, expire_on_commit=False)
+        Session = scoped_session(sess_factory)
+        self.__session = Session
