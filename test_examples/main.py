@@ -36,6 +36,6 @@ session = Session()
 session.add_all([ad, chem, ad2])
 session.commit()
 """
-for u,a in session.query(User, Address).filter(User.id==Address.user_id).all():
-    print(u.name, a.email_address)
+for u in session.query(User).join(Address).all():
+    print(u.name, u.email)
 
