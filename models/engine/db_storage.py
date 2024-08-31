@@ -104,7 +104,7 @@ class DBStorage():
         table_class = globals()[table]  # Dynamically get the table class
         total_sum = self.__session.query(func.sum(getattr(table_class, column))).scalar()
         #return total_sum
-        return int(total_sum) if total_sum is not None else 0
+        return float(total_sum) if total_sum is not None else 0
     
     def get_joined_columns(self, table1_column, table2_column):
         """Joins two tables and returns a list of dictionaries"""
