@@ -26,3 +26,8 @@ def callback():
     storage.new(payment)
     storage.save()
     return "ok"
+
+
+@app_views.route("/status", strict_slashes=False)
+def get_status():
+    return "ok"
