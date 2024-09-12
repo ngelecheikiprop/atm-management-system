@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk ATM Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello Kiprop 👋</h1>
+        </header>
+
+        <div class="summary-cards">
+            <div class="card">
+                <p>Revenue</p>
+                <h2>{{ stats.total_sales }}</h2>
+            </div>
+            <div class="card">
+                <p>Litres Deposited</p>
+                <h2>{{ stats.total_litres_deposited }}</h2>
+            </div>
+            <div class="card">
+                <p>Litres Dispensed</p>
+                <h2>{{ stats.total_litres_dispensed }}</h2>
+            </div>
+	                <div class="card">
+                <p>Litres Remaining</p>
+                <h2>{{ stats.litres_remaining }}</h2>
+            </div>
+
+        </div>
+
+        <div class="sales-table">
+            <h2>Sales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phone number</th>
+                        <th>Trans ID</th>
+                        <th>Date</th>
+                        <th>Amount (ksh)</th>
+                        <th>Litres Bought</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for sale in sales_list %}
+                    <tr>
+                        <td>{{ sale.phone_number }}</td>
+                        <td>{{ sale.transaction_id }}</td>
+                        <td>{{ sale.time_received }}</td>
+                        <td>{{ sale.amount }}</td>
+                        <td>{{ sale.litres_dispensed }}</td>
+                        <td>
+                            <span class="status {{ sale.status | lower }}">
+                                {{ sale.status }}
+                            </span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
