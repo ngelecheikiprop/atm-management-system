@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #e6f7f2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #68b2a0;
+}
+
+.card h2 {
+    margin: 10px 0 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.sales-table {
+    margin-top: 20px;
+}
+
+.sales-table h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #68b2a0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #e6f7f2;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+    color: #68b2a0;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.dispensed {
+    background-color: #68b2a0;
+}
+
+.not-dispensed {
+    background-color: #f28a8a;
+}
+
+.inactive {
+    background-color: #cccccc;
+}
+
