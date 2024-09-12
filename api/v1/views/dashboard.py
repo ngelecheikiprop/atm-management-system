@@ -12,13 +12,13 @@ def get_stats():
     total_litres_deposited = storage.get_sum_of('Deposit.litres_deposited')
     litres_remaining = total_litres_deposited - total_litres_dispensed
     stats = {
-        "total_sales": total_sales,
-        "total_litres_dispensed": total_litres_dispensed,
-        "total_litres_deposited": total_litres_deposited,
-        "litres_remaining":litres_remaining
+        "total_sales": int(total_sales),
+        "total_litres_dispensed": round(total_litres_dispensed,1),
+        "total_litres_deposited": round(total_litres_deposited,1),
+        "litres_remaining":round(litres_remaining, 1)
     }
 
-    return jsonify(stats)
+    return stats
 
 @app_views.route("/sales", methods=['GET'], strict_slashes=False)
 def get_sales():
