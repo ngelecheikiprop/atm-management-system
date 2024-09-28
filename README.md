@@ -42,7 +42,7 @@ Information on how to contribute to the project.
 Details on the project's license.
 
 
-![Example Image]([images/ high_leve.drawio.png](https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fletsenhance.io%2Fstatic%2F8f5e523ee6b2479e26ecc91b9c25261e%2F1015f%2FMainAfter.jpg&imgrefurl=https%3A%2F%2Fletsenhance.io%2F&docid=-t22bY2ix3gHaM&tbnid=tYmxDgFq4MrkJM&vet=12ahUKEwjF-p3JgOWIAxVQcfEDHc9xLHUQM3oECBwQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwjF-p3JgOWIAxVQcfEDHc9xLHUQM3oECBwQAA)
+![Example Image]([images/ high_leve.drawio.png](https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fletsenhance.io%2Fstatic%2F8f5e523ee6b2479e26ecc91b9c25261e%2F1015f%2FMainAfter.jpg&imgrefurl=https%3A%2F%2Fletsenhance.io%2F&docid=-t22bY2ix3gHaM&tbnid=tYmxDgFq4MrkJM&vet=12ahUKEwjF-p3JgOWIAxVQcfEDHc9xLHUQM3oECBwQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwjF-p3JgOWIAxVQcfEDHc9xLHUQM3oECBwQAA))
 
 make sure to set environment varibles as follows:
 MYSQL_USER=atmadmin
