@@ -42,6 +42,7 @@ Information on how to contribute to the project.
 Details on the project's license.
 
 
+![Example Image](images/ high_leve.drawio.png)
 
 make sure to set environment varibles as follows:
 MYSQL_USER=atmadmin
